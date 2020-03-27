@@ -169,8 +169,18 @@ li{
   line-height: 1;
 }
 
+.align-center { 
+  align-items: center;
+}
+
+.icon {
+  width: 10px;
+  margin-right: 4px;
+}
+
 .date span{
   display: block;
+  width: 20px;
 }
 
 .date span:nth-child(2)::before{
@@ -264,6 +274,9 @@ li{
 
 .details .location{
   float: right;
+  height: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .details div{
@@ -279,7 +292,6 @@ li{
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
-  content: "\f041";
 }
 
 /***** fine-tunes on the lists... *****/
@@ -324,6 +336,18 @@ li{
   font-size: 11pt;
 }
 
+#sidebar li {
+  display: flex; 
+  /* align-items: baseline;  */
+  align-items: center; 
+  /* align-items: flex-end;  */
+  font-size: 10px;
+}
+
+#sidebar .icon {
+  width: 12px;
+}
+
 .side-block{
   margin-top: 0.5in; 
 }
@@ -338,6 +362,7 @@ li{
 
 #contact li > i{
   width: 9pt; /* for text alignment */
+  font-size: 9px;
   text-align: right;
 }
 

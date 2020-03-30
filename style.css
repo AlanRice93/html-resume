@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 :root{
   --page-width: 8.5in;
   --page-height: 11in;
@@ -64,6 +65,7 @@ li{
   padding: 0.6in var(--sidebar-horizontal-padding);
   background-color: #f2f2f2;
   font-size: 8.5pt;
+  padding-left: 8px;
 }
 
 /* main */
@@ -279,7 +281,7 @@ li{
   margin-bottom: 10px;
 }
 
-.details div{
+ div{
   clear: both;
 }
 
@@ -297,7 +299,8 @@ li{
 /***** fine-tunes on the lists... *****/
 
 #main ul{
-  padding-left: 0.07in;
+  /* padding-left: 0.07in; */
+  padding-left: 0;
   margin: 0.08in 0;
 }
 
@@ -391,4 +394,9 @@ li{
   font-family: "Source Code Pro";
   font-weight: 400;
   font-style: normal;
+}
+
+.description {
+  line-height: 15px;
+  hyphens: none;
 }

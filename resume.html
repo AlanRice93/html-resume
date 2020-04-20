@@ -1,283 +1,215 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <link href="dep/normalize.css/normalize.css" rel="stylesheet" type="text/css"/>
-        <link href="dep/Font-Awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-        <script src="https://unpkg.com/feather-icons"></script>
-    </head>
-    <body lang="en">
-        <section id="main">
-            <header id="title">
-                <h1>Alan Rice</h1>
-                <span class="subtitle">Software Developer</span>
-            </header>
-            <section class="main-block">
-                <h2>
-                    <i class="fa fa-suitcase"></i>
-                    Experience
-                </h2>
-                <section class="blocks">
-                    <div class="date">
-                        <span>PRESENT</span>
-                        <span>SEP 2017</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Software Engineer</h3>
-                            <span class="place">Ride Health</span>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="dep/normalize.css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body lang="en">
+        <div class="flex items-center py-4 bg-gray-400" style="padding-left: 92px;">
+            <img src="headshot.png" class="w-20 h-20 rounded-full mr-6" />
+            <div>
+                <div class="text-3xl">Alan Rice</div>
+                <span class="text-xl">Software Developer</span>
+            </div>
+        </div>
+        <div>
+        <div class="flex">
+            <div class="px-4">
+            <div class="text-base flex mt-4">
+                <span style="margin-left: 66px" class="flex items-center l-2 b-l-2 border-gray-400 pl-4 text-xs leading-4 underline">
+                    <!-- <i class="w-3 h-3 mr-1" data-feather="briefcase"></i> -->
+                    EXPERIENCE 
+                </span>
+            </div>
+            <div class="flex py-1 mb-2">
+                <div class="flex flex-col items-center pt-1 text-center px-2 whitespace-no-wrap text-xs">
+                    <div>PRESENT</div>
+                    <div class="h-8 bg-gray-400 my-2" style="width: 1.5px"></div>
+                    <div>SEP 2017</div>
+                </div>
+                <div class="border-l-2 border-gray-400 pl-4">
+                    <div class="mb-1">
+                        <div class="text-lg">Software Engineer</div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="">Ride Health</span>
                             <span class="location blocks align-center">
                                 <i class="icon" data-feather="map-pin"></i>
                                 New York, NY (remote)
                             </span>
-                        </header>
-                        <div class="description">
-                                Our team oversees a product that provides scheduling capablities, real-time updates, and dozens of other features for non-emergency medical trips. The system is deployed across dozens of health systems and hospital networks and handles over a hundred thousand trips a year. Our engineering team consists of only three full-time engineers. Our efficiency comes from our values of transparent communication and efficiency. We prioritize building tools that make our jobs easiers, which in the long run makes us happier and more efficient developers. 
-                        </div>
-                        <div class="description">
-                                I joined Ride Health when there was only the CEO and CTO, and the company has since scaled to 25M+ in revenue and 26 full-time employees. My day to day at Ride Health takes me everywhere in stack, from automating sales processes to building interfaces to architecting complex features. I get to work with the product and sales teams to innovate solutions for underserved and at-risk populations.</p>
                         </div>
                     </div>
-                </section>
-                <section class="blocks">
-                    <div class="date">
-                        <span>Sep 2017</span>
-                        <span>Sep 2016</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Web Developer</h3>
-                            <span class="place">Authorea</span>
-                            <span class="location blocks align-center">
-                                <i class="icon" data-feather="map-pin"></i>
-                                New York, NY</span>
-                        </header>
-                        <div class="description">
-                            I began work at Authorea as a contractor, asked to rebuild their website in a month. I completed the job early and was taken on as a full-time employee. Authorea had a team of six engineers, most of whom were strictly back-end developers. I jumped at the chance to lead front-end development for the team. Authorea's product was a mix between Google Docs and Github. I collaborated with the design team to redesign the editing interface, which has a similar visual complexity to a Google Docs document. 
-
-                        </div>
-                        <div class="description">
-                            My work wasn't limited to front-end tasks. I worked across the stack building features in Ruby on Rails, including onboarding flows, internal customer support tooling, and much more. 
-                        </div>
-                        <div class="description">
-                        </div>
-                    </div>
-                </section>
-                <section class="blocks">
-                    <div class="date">
-                        <span>APR 2016</span>
-                        <span>FEB 2016</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Web Development Intern</h3>
-                            <span class="place">Oak Studios</span>
-                            <span class="location blocks align-center">
-                                <i class="icon" data-feather="map-pin"></i>
-                                New York, NY</span>
-                        </header>
-                        <div>
-                            <ul>
-                                <li>Built a client website from scratch. The website hosted information about a design competition and was shipped under tight deadlines. Integrated with in-house CMS (Siteleaf) so customer could update sponsorhip and competition information at their discretion.</li>
-                                <li>Fixed complex bugs for several clients including WorkingNotWorking.com</li>
-                                <li>Participated in weekly code reviews and scrum meetings. Adhered to Oak's detail-oriented style guides (most employees are professional designers).
-                                </li>
+                    <div class="text-xs">
+                        <div class="text-xs">
+                            <ul class="list-disc break-normal exp">
+                                <li>Second engineering hire. Interviewed, onboarded, and mentored newer team members as we grew to 26 full-time employees.</li>
+                                <li>Worked across the stack using Elixir, Typescript, and React.</li>
+                                <li>Reduced incoming customer support phone calls 80% by building an automated phone system in Elixir. The system handled real-time compleixites like allowing patients to hail a ride and stay on the line to be connected to a driver.</li>
+                                <li>Exposed real-time ride information by building an sms-based dispatch system in Elixir. The system allows drivers to update their trip statuses via sms, providing transparency for end unders and statiscal information (on-time arrival rate, duration estimate accuracy, etc) to all key stakeholders.</li>
+                                <li>Built complex user interfaces in React + Typescript, including a real-time visualization of a driver's positon using Google Maps.</li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-            </section>
-            <!-- <section class="main-block">
-                <h2>
-                    <i class="fa fa-folder-open"></i>
-                    Selected Projects
-                </h2>
-                <section class="blocks">
-                    <div class="date">
-                        <span>2015</span>
-                        <span>2016</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Some Project 1</h3>
-                            <span class="place">Some workplace</span>
-                        </header>
-                        <div>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section> -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <!-- <section class="blocks">
-                    <div class="date">
-                        <span>2014</span>
-                        <span>2015</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Some Project 2</h3>
-                            <span class="place">Some workplace</span>
-                        </header>
-                        <div>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac. Maecenas viverra tortor eget convallis vestibulum. Donec pulvinar venenatis est, non sollicitudin metus laoreet sed. Fusce tincidunt felis nec neque aliquet porttitor</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="blocks">
-                    <div class="date">
-                        <span>2014</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Some Project 3</h3>
-                            <span class="place">Some workplace</span>
-                        </header>
-                        <div>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </section> -->
-            <section class="main-block concise">
-                <h2>
-                    <i class="fa fa-graduation-cap"></i>
-                    Education
-                </h2>
-                <section class="blocks">
-                    <div class="date">
-                        <span>OCT 2015</span>
-                        <span>JULY 2015</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Web Development Immersive</h3>
-                            <span class="place">General Assembly</span>
-                            <span class="location blocks align-center">
-                                <i class="icon" data-feather="map-pin"></i>
-                                New York, NY</span>
-                        </header>
-                        <div>12 week full-time course in web development principles. Built applications in several stacks and frameworks includings Ruby on Rails, Node, Angular, Sinatra, etc.
-                        </div>
-                    </div>
-                </section>
-                <section class="blocks">
-                    <div class="date">
-                        <span>May 2015</span>
-                        <span>Sep 2011</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Bachelor's in Music with Sequence in Jazz Performance</h3>
-                            <span class="place">New York University</span>
-                            <span class="location blocks align-center">
-                                <i class="icon" data-feather="map-pin"></i>
-                                New York, NY</span>
-                        </header>
-                        <div>One of 20 students accepted to one of the most competitive jazz peformance programs in the world. One of 11 students who graduated the difficult program. Studied with some of the best musicians in the world including Pablo Rieppi (percussionist for the NYC Philharmonic Orchestra and the NYC Ballet), Lenny White (Return to Forever, Miles Davis), and John Scofield (Miles Davis). Performed professionally in the world's most competitive musical landscape.</div>
-                    </div>
-                </section>
-                <!-- <section class="blocks">
-                    <div class="date">
-                        <span>2005</span>
-                        <span>2009</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>B.S. in Existential Science (Double Major)</h3>
-                            <span class="place">Inexistent University</span>
-                            <span class="location">Some City, Some Country</span>
-                        </header>
-                        <div>One of 20 students accepted to one of the most competitive jazz peformance programs in the world. One of 11 students who graduated the difficult program. Studied with some of the best musicians in the world including Pablo Rieppi (percussionist for the NYC Philharmonic Orchestra and the NYC Ballet), Lenny White (Return to Forever, Miles Davis), and John Scofield (Miles Davis). Performed professionally in the world's most competitive musical landscape.</div>
-                    </div>
-                </section> -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <!-- <section class="blocks">
-                    <div class="date"></div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>Massive Online Fee&ndash;Required Course (selective list)</h3>
-                        </header>
-                        <div class="concise">
-                            <ul>
-                                <li>Introduction to something else</li>
-                                <li>Introduction to some more useless things</li>
-                                <li>Philosophy in practice</li>
-                                <li>Recursive research and its impact on recursive research</li>
-                                <li>Artificial politics</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section> -->
-            </section>
-        </section>
-        <aside id="sidebar">
-            <div class="side-block" id="contact">
-                <h1>
-                    Contact Info
-                </h1>
-                <ul>
-                    <li>&bull;&nbsp;alanrice.me</li>
-                    <li>&bull;&nbsp;linkedin.com/alan-rice-code</li>
-                    <li>&bull;&nbsp;mail@alanrice.me</li>
-                    <li>&bull;&nbsp;angel.co/alan-rice</li>
-                    <li>&bull;&nbsp;twitter.com/Alan__Rice</li>
-                    <li>&bull;&nbsp;github.com/AlanRice93</li>
-                </ul>
+                </div>
+                </div>
             </div>
-            <div class="side-block" id="skills">
-                <h1>
-                    Skills
-                </h1>
-                <ul>
-                    <li>Elixir</li>
-                    <li>Javascript (ES7 / ES7)</li>
-                    <li>Ruby</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-                <ul>
-                    <li>React</li>
-                    <li>Rails</li>
-                    <li>Node</li>
-                </ul>
-                <ul>
-                    <li>Google Cloud Platform</li>
-                    <li>AWS</li>
-                </ul>
-                <h1>
-                    Interests
-                </h1>
-                <ul>
-                    <li>Jazz</li>
-                    <li>Movie quotes</li>
-                    <li>Gastronomy</li>
-                    <li>Yoga</li>
-                </ul>
+            <div class="flex py-1 mb-2">
+                <div class="flex flex-col items-center text-center px-2 whitespace-no-wrap text-xs pt-1">
+                    <div>SEP 2017</div>
+                    <div class="h-8 bg-gray-400 my-2" style="width: 1.5px"></div>
+                    <div>SEP 2016</div>
+                </div>
+                <div class="border-l-2 border-gray-400 pl-4">
+                    <div class="mb-1">
+                        <div class="text-lg">Web Developer</div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="">Authorea</span>
+                            <span class="location blocks align-center">
+                                <i class="icon" data-feather="map-pin"></i>
+                                New York, NY 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-xs">
+                        <div class="text-xs">
+                            <ul class="list-disc break-normal exp">
+                                <li>Responsible for building for all user interfaces. Built a document processing interface with a similar visual complexity to Google Docs in React.</li>
+                                <li>Architected and rebuilt the company's product website from scratch during my first month using Ruby on Rails, HTML5 and CSS.</li>
+                                <li>Built numerous backend features in Ruby on Rails including internal customer support tools and complex onboarding flows.</li>
+                            </ul>
+                        </div>
+                </div>
+                </div>
             </div>
-            <!-- <div class="side-block" id="disclaimer">
+            <div class="flex py-1 mb-2">
+                <div class="flex flex-col items-center text-center px-2 whitespace-no-wrap text-xs pt-1">
+                    <div>APR 2016</div>
+                    <div class="h-8 bg-gray-400 my-2" style="width: 1.5px"></div>
+                    <div>FEB 2016</div>
+                </div>
+                <div class="border-l-2 border-gray-400 pl-4">
+                    <div class="mb-1">
+                        <div class="text-lg">Web Development Intern</div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="">Oak Studios</span>
+                            <span class="location blocks align-center">
+                                <i class="icon" data-feather="map-pin"></i>
+                                New York, NY 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-xs">
+                            <ul class="list-disc break-normal exp">
+                                <li>Built a client's website from scratch using the static site generator Jekyll.</li>
+                                <li>Ported a client's website to use Oak's proprietary CMS, Siteleaf.</li>
+                                <li>Added new features and fixed bugs in Ruby on Rails for high traffic websites including WorkingNotWorking.com</li>
+                            </ul>
+                </div>
+                </div>
+            </div>
+                <div class="text-base flex mt-4">
+                    <span style="margin-left: 66px" class="flex items-center l-2 b-l-2 border-gray-400 pl-4 text-xs leading-4 underline">
+                        <!-- <i class="w-3 h-3 mr-1" data-feather="briefcase"></i> -->
+                        EDUCATION
+                    </span>
+            </div>
+            <div class="flex py-1 mb-2">
+                <div class="flex flex-col items-center text-center px-2 whitespace-no-wrap text-xs pt-1">
+                    <div>OCT 2015</div>
+                    <div class="h-8 bg-gray-400 my-2" style="width: 1.5px"></div>
+                    <div>JUL 2015</div>
+                </div>
+                <div class="border-l-2 border-gray-400 pl-4">
+                    <div class="mb-1">
+                        <div class="text-lg">Web Development Immersive</div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="">General Assembly</span>
+                            <span class="location blocks align-center">
+                                <i class="icon" data-feather="map-pin"></i>
+                                New York, NY 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-xs">
+                            <ul class="list-disc break-normal exp">
+                                <li>12-week, full-time course in web development.</li>
+                                <li>Built applications from scratch using Ruby on Rails, Express, Node, MongoDb, Angular, React, Sinatra, and much more.</li>
+                                <li>Mastered the fundamentals of version control and code collaboration. Partipated in daily scrum meetings, agile development, and pair programming.</li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+            <div class="flex py-1 mb-2">
+                <div class="flex flex-col items-center text-center px-2 whitespace-no-wrap text-xs pt-1">
+                    <div>MAY 2015</div>
+                    <div class="h-8 bg-gray-400 my-2" style="width: 1.5px"></div>
+                    <div>SEP 2011</div>
+                </div>
+                <div class="border-l-2 border-gray-400 pl-4">
+                    <div class="mb-1">
+                        <div class="text-lg">Bachelor's in Music, Jazz Performance</div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="">New York University</span>
+                            <span class="location blocks align-center">
+                                <i class="icon" data-feather="map-pin"></i>
+                                New York, NY 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-xs">
+                        <div class="text-xs">
+                            <ul class="list-disc break-normal exp">
+                                <li>One of 20 accepted into highly competitive jazz program.</li>
+                                <li>Studied with some of the best and most demanding teachers in the world, including members from Miles Davis's band and the NYC Ballet.</li>
+                                <li>Played professional in various musical setings including jazz clubs and musical theatre.</li>
+                            </ul>
+                        </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    <div style="width: 200px" class="bg-gray-400 px-4 text-xs pt-4 whitespace-no-wrap">
+            <div class="mb-1 text-xs underline">CONTACT</div>
+            <ul class="text-xs">
+                <li class="pb-1">alanrice.me</li>
+                <li class="pb-1">linkedin.com/alan-rice-code</li>
+                <li class="pb-1">mail@alanrice.me</li>
+                <li class="pb-1">angel.co/alan-rice</li>
+                <li class="pb-1">twitter.com/Alan__Rice</li>
+                <li class="pb-1">github.com/AlanRice93</li>
+            </ul>
+        <div>
+            <div class="mb-1 mt-4 text-xs underline">SKILLS</div>
+            <ul>
+                <li class="pb-1">Elixir</li>
+                <li class="pb-1">Javascript (ES7 / ES7)</li>
+                <li class="pb-1">React</li>
+                <li class="pb-1">Redux</li>
+                <li class="pb-1">Ruby</li>
+                <li class="pb-1">HTML</li>
+                <li class="pb-1">CSS</li>
+                <li class="pb-1">Ruby on Rails</li>
+            </ul>
+            <ul>
+                <li class="pb-1">Google Cloud Platform</li>
+                <li class="pb-1">AWS</li>
+            </ul>
+        </div>
+        <!-- <div class="side-block" id="disclaimer">
                 This r&eacute;sum&eacute; was wholly typeset with HTML/CSS &mdash; see
                 <code>git.io/vVSYL</code>
             </div> -->
-        </aside>
-        <script>
-          feather.replace()
-        </script>
-    </body>
+        </div>
+    </div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', e => {
+        feather.replace()
+        })
+    </script>
+</body>
+
 </html>
